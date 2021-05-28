@@ -96,7 +96,7 @@ function changeBrackets() {
 // window.onload = setTimeout(showBrackets, 1000);
 // windown.onload = changeBrackets;
 // window.onload = getRandomColor;
-// window.onload = setInterval(changeBrackets, 5000);
+window.onload = setInterval(changeBrackets, 5000);
 
 
 // window.onblur = function() {

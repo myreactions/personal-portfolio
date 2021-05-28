@@ -15,4 +15,6 @@
 - deadline: 3 days
 
 
-responsive
+vertical center h1 on mobile
+smaller h2 featured projects
+test js brackets
