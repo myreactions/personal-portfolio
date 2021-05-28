@@ -1,4 +1,196 @@
-body {
-  /* background: black;
-  color: white; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Nixie+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Nixie+One&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Nixie+One&family=Palanquin+Dark&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Josefin+Sans&family=Nixie+One&family=Palanquin+Dark&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Forum&family=Josefin+Sans&family=Nixie+One&family=Palanquin+Dark&family=Poiret+One&family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  background: black;
+  background: #0D101E;
+  background: #192334;
+  background: linear-gradient(#0D101E, #192334, #0D101E);
+  color: white;
+  font-family: sans-serif;
+  font-family: 'Helvetica';
+  font-family: 'Roboto';
+  font-family: 'Sawarabi Mincho';
+  font-family: 'Nixie One';
+  font-family: 'PT Mono';
+  font-family: 'Montserrat';
+  text-align: center;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1D2333;
+  /* background-color: black; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #313646;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  /* background: #0D101E; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  /* color: transparent; */
+}
+
+header h2 {
+  padding: 0.5rem;
+  padding: 1rem;
+  /* background: white; */
+  /* color: #0D101E; */
+  color: transparent;
+  color: white;
+  /* border: 1px solid white; */
+  /* border-bottom: 1px solid white; */
+  /* border-top: 1px solid white; */
+  /* transition: all 1s; */
+  /* font-style: italic; */
+}
+
+.brackets {
+  font-size: 2.5rem;
+  color: orange;
+  color: #0D101E;
+  color: #3484E3;
+  font-weight: 100;
+  font-weight: 300;
+}
+
+#test {
+  height: 50px;
+  width: 300px;
+  background: white;
+  background: inherit;
+  position: relative;
+  top: -4rem;
+}
+
+/* SECTIONS */
+section {
+  padding: 2rem;
+}
+
+/* PORTFOLIO */
+#portfolio {
+  /* height: 100vh; */
+  /* background: #192333; */
+}
+
+#portfolio h2 {
+  display: inline-block;
+  /* background: white; */
+  /* color: #0D101E; */
+  padding: 1rem 3rem;
+  /* border: 1px solid white; */
+  border-bottom: 1px solid white;
+}
+
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.project {
+  height: 400px;
+  /* height: 30%; */
+  width: 400px;
+  /* width: 30%; */
+  background: black;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1010px) {
+  .project {
+    width: 90vw;
+    height: 400px;
+  }
+}
+
+
+/* CONTACT */
+#contact {
+  /* height: 40vh; */
+  padding-top: 4rem;
+  padding-bottom: 14rem;
+}
+
+#contact h3 {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+#contact a {
+  border-bottom: 2px solid white;
+}
+
+#contact a:hover {
+  border-bottom: 2px solid #3484E3;
+}
+
+
+/* FOOTER */
+footer {
+  /* border-top: 1px solid grey; */
+  margin: 0 2rem;
+}
+
+#copyright {
+  color: grey;
+  font-size: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-top: 1px solid grey;
+  display: inline-block;
 }
