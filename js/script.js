@@ -128,7 +128,8 @@ Array.from(skills).forEach(skill => {
     Array.from(skills).forEach(skill => {
       // skill.style.color = getRandomColor();
       // skill.style.color = color;
-      skill.style.color = 'white';
+      // skill.style.color = 'white';
+      skill.style.color = 'lightblue';
     })
   }
 });
@@ -146,8 +147,8 @@ Array.from(skills).forEach(skill => {
 // window.onload = setTimeout(showBrackets, 1000);
 // windown.onload = changeBrackets;
 // window.onload = getRandomColor;
-window.onload = setInterval(changeBracketsColor, 5000);
 // window.onload = setInterval(changeSkillsColor, 5000);
+window.onload = setInterval(changeBracketsColor, 5000);
 
 
 // window.onblur = function() {
