@@ -243,11 +243,11 @@ section {
   }
 }
 
-@media only screen and (max-width: 500px), (max-width: 8cm) {
+/* @media only screen and (max-width: 500px), (max-width: 8cm) {
   #skills {
     display: none;
   }
-}
+} */
 
 /* CONTACT */
 #contact {
