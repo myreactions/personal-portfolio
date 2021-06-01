@@ -197,6 +197,22 @@ section {
   border-bottom: 2px solid #3484E3;
 }
 
+@media only screen and (max-width: 480px) {
+  #contact {
+    height: 90vh;
+    padding-top: initial;
+    padding-bottom: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact h3 {
+
+  }
+}
+
 
 /* FOOTER */
 footer {
