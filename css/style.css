@@ -104,13 +104,26 @@ header h2 {
   font-weight: 300;
 }
 
-#test {
+/* #test {
   height: 50px;
   width: 300px;
   background: white;
   background: inherit;
   position: relative;
   top: -4rem;
+} */
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: block;
+  }
+  header h1, h2 {
+    position: relative;
+    top: 30%;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
 }
 
 /* SECTIONS */
@@ -151,8 +164,15 @@ section {
 
 @media only screen and (max-width: 1010px) {
   .project {
-    width: 90vw;
+    width: 95vw;
     height: 400px;
+    margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #portfolio h2 {
+    font-size: 1.5rem;
   }
 }
 

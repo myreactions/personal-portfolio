@@ -17,4 +17,7 @@
 
 vertical center h1 on mobile
 smaller h2 featured projects
-test js brackets
+skills section (core skills, other skills, - icons/font awesome)
+clean up
+make proper readme.md
+delete this or save in personal folder
