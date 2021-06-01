@@ -135,6 +135,7 @@ section {
 #portfolio {
   /* height: 100vh; */
   /* background: #192333; */
+  margin-bottom: 4rem;
 }
 
 #portfolio h2 {
@@ -176,12 +177,91 @@ section {
   }
 }
 
+/* SKILLS */
+#skills {
+  height: 20vh;
+  height: 8rem;
+  height: 10rem;
+  /* width: 60%; */
+  max-width: 1024px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid white; */
+  /* border-top: 1px solid white; */
+  /* border-bottom: 1px solid white; */
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  background: #202330;
+  background: inherit;
+  border: 2px solid #1B354E;
+  border: 2px solid #3484E3;
+  border: 2px solid #73C4FA;
+  border-radius: 0;
+  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #1B354E, 0 0 100px #1B354E;
+  box-shadow: 0 0 50px #1B354E;
+}
+
+#skills h2 {
+  padding-bottom: 1rem;
+}
+
+#skills-container {
+  /* background: white;
+  background: rgba(255, 255, 255, 0.9);
+  background: #202330;
+  border: 2px solid #1B354E; */
+}
+
+#skills i {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem;
+  color: lightblue;
+  color: green;
+  color: cyan;
+  color: grey;
+  color: initial;
+  color: #0D101E;
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  #skills {
+    height: initial;
+    margin: 0 1rem;
+  }
+
+  #skills i {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #skills {
+    display: none;
+  }
+}
 
 /* CONTACT */
 #contact {
   /* height: 40vh; */
-  padding-top: 4rem;
-  padding-bottom: 14rem;
+  height: 20rem;
+  height: 55vh;
+  /* background: lightblue; */
+  /* padding-top: 4rem; */
+  /* padding-bottom: 14rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid white; */
 }
 
 #contact h3 {
@@ -190,16 +270,30 @@ section {
 }
 
 #contact a {
+  /* padding: 1rem; */
+  /* background: lightblue; */
+  /* background: white; */
+  /* color: initial; */
+  border-radius: 5px;
+  border-radius: 2px;
+  border-radius: 0;
+  /* border: 1px solid white; */
+  border: ;
   border-bottom: 2px solid white;
+  border-bottom: 2px solid #73C4FA;
+  border-bottom: 2px solid #3484E3;
+  transition: border-bottom 0.15s;
 }
 
 #contact a:hover {
   border-bottom: 2px solid #3484E3;
+  border-bottom: 2px solid white;
+  border-bottom: 2px solid transparent;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   #contact {
-    height: 90vh;
+    height: 85vh;
     padding-top: initial;
     padding-bottom: initial;
     display: flex;
@@ -207,12 +301,7 @@ section {
     align-items: center;
     justify-content: center;
   }
-
-  #contact h3 {
-
-  }
 }
-
 
 /* FOOTER */
 footer {

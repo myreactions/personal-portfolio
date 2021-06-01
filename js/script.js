@@ -74,14 +74,64 @@ function getRandomColor() {
   return color;
 }
 
-function changeBrackets() {
+function getGoogleColor() {
+  let colors = ['#4285F4', '#EA4335', '#FABC03', '#34A853'];
+  let color;
+  for (let i = 0; i < colors.length; i++) {
+    color = colors[Math.floor(Math.random() * 4)];
+  }
+  return color;
+}
+
+function getColorPalette() {
+  let colors = ['	#ff0000', '#ffa500', '#ffff00', '#008000', '#0000ff', '#4b0082', '	#ee82ee'];
+  let color;
+  for (let i = 0; i < colors.length; i++) {
+    color = colors[Math.floor(Math.random() * colors.length)];
+  }
+  return color;
+}
+
+function changeBracketsColor() {
   let brackets = document.getElementsByClassName('brackets');
   let color = getRandomColor();
   Array.from(brackets).forEach(bracket => {
-    bracket.style.transition = 'color 5s'
+    bracket.style.transition = 'color 5s';
     bracket.style.color = color;
   })
 }
+
+function changeSkillsColor() {
+  let skills = document.querySelectorAll('i');
+  let color = getRandomColor();
+  Array.from(skills).forEach(skill => {
+    skill.style.transition = 'color 5s';
+    skill.style.color = getRandomColor();
+  })
+}
+
+// CHANGE COLOR ON HOVER
+let skills = document.querySelectorAll('i');
+Array.from(skills).forEach(skill => {
+  skill.onmouseover = function() {
+    skill.style.transition = 'color 0.4s';
+    skill.style.color = getRandomColor();
+    // skill.style.color = getGoogleColor();
+    // skill.style.color = getColorPalette();
+  };
+  // CLICK RESETS ALL TO WHITE
+  skill.onclick = function() {
+    // skill.style.color = 'white';
+    // let color = skill.style.color;
+    let color = getRandomColor();
+    // let color = getGoogleColor();
+    Array.from(skills).forEach(skill => {
+      // skill.style.color = getRandomColor();
+      // skill.style.color = color;
+      skill.style.color = 'white';
+    })
+  }
+});
 
 
 // h2.onmouseover = appear;
@@ -96,7 +146,8 @@ function changeBrackets() {
 // window.onload = setTimeout(showBrackets, 1000);
 // windown.onload = changeBrackets;
 // window.onload = getRandomColor;
-window.onload = setInterval(changeBrackets, 5000);
+window.onload = setInterval(changeBracketsColor, 5000);
+// window.onload = setInterval(changeSkillsColor, 5000);
 
 
 // window.onblur = function() {
