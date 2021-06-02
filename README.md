@@ -12,10 +12,9 @@
 
 ## Features
 - brackets surrounding the main subheading change color every 5s
-- skill icons change color on hover, clicking on any icon resets all to white
+- skill icons change color on hover, clicking on any icon resets them all to white
 
 ### Features to be added
 - portfolio project clickable image links
 - name and short description of the project on hover
-- change skills to their true brand colors on hover
 - something that makes the website stand out and be memorable (not a cookies notice popup)

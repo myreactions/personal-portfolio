@@ -155,6 +155,42 @@ section {
   color: white;
 }
 
+#skills .fa-html5 {
+  color: #DD4B26;
+}
+
+#skills .fa-css3-alt {
+  color: #236EB0;
+}
+
+#skills .fa-js {
+  color: #EFD81D;
+}
+
+#skills .fa-react {
+  color: #44D1F7;
+}
+
+#skills .fa-terminal {
+  color: #;
+}
+
+#skills .fa-git {
+  color: #E84E30;
+}
+
+#skills .fa-github {
+  color: #;
+}
+
+#skills .fa-npm {
+  color: #C53635;
+}
+
+#skills .fa-node {
+  color: #319431;
+}
+
 @media only screen and (max-width: 1024px) {
   #skills {
     height: initial;

@@ -105,11 +105,32 @@ function skillsHover() {
 }
 
 
+// CHANGE SKILL COLOR TO DEFAULT ON HOVER, RESET TO WHITE ON CLICK
+function skillsHoverNew() {
+  let skills = document.querySelectorAll('i');
+  Array.from(skills).forEach(skill => {
+    let color = skill.style.color;
+    skill.style.color = 'white';
+    skill.onmouseover = function() {
+      skill.style.transition = 'color 0.3s';
+      // skill.style.color = 'white';
+      skill.style.color = color;
+    }
+    skill.onclick = function() {
+      Array.from(skills).forEach(skill => {
+        skill.style.color = 'white';
+      })
+    }
+  })
+}
+
+
 // FUNCTION CALLS
 // windown.onload = changeBrackets;
 // window.onload = setInterval(changeSkillsColor, 5000);
 window.onload = setInterval(changeBracketsColor, 5000);
-window.onload = skillsHover;
+// window.onload = skillsHover;
+window.onload = skillsHoverNew;
 
 
 // BLUR FUNCTION
