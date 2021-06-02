@@ -17,4 +17,5 @@
 ### Features to be added
 - portfolio project clickable image links
 - name and short description of the project on hover
+- change skills to their true brand colors on hover
 - something that makes the website stand out and be memorable (not a cookies notice popup)
