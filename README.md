@@ -7,6 +7,7 @@
 - smooth transitions and clean animations
 - custom scrollbar
 - simple JS that adds color to the website
+- website design inspired by replit.com
 - deadline: 3 days
 
 ## Features
