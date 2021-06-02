@@ -151,8 +151,8 @@ section {
   font-size: 2.5rem;
   font-weight: 400;
   margin: 1rem;
-  color: white;
   color: lightblue;
+  color: white;
 }
 
 @media only screen and (max-width: 1024px) {
